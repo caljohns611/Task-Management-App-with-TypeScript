@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import TaskDetails from './components/TaskDetails';
 import TaskForm from './components/TaskForms';
@@ -20,7 +20,6 @@ const App: React.FC = () => {
   return (
 
     <TaskProvider>
-      <Router>
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/profile' element={<AuthenticationGuard components={ProfilePage} />} />
@@ -31,7 +30,6 @@ const App: React.FC = () => {
           <Route path='/task/edit/:id' element={<TaskForm />} />
           <Route path='/login' element={<Login />} /> 
         </Routes>
-      </Router>
     </TaskProvider>
 
   );
