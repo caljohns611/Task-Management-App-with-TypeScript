@@ -9,7 +9,7 @@ const Dashboard: React.FC = () => {
     const { tasks } = useTasks();
 
     return (
-        <div>
+        <div style={{textAlign: 'center'}}>
             <Container>
                 <Col>
                     <h1>Task Dashboard</h1>

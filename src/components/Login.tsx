@@ -5,7 +5,7 @@ const Login: React.FC = () => {
     const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
     return (
-        <div>
+        <div style={{ textAlign: 'center'}}>
             {isAuthenticated ? (
                 <>
                     <p>Welcome, {user?.name}</p>

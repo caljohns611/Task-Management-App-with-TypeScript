@@ -8,7 +8,7 @@ type PageLayoutProps = {
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
     return (
-        <Container>
+        <Container style={{ textAlign: 'center'}}>
             <Col>
                 <NavBar />
             </Col>

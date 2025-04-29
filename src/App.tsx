@@ -22,8 +22,8 @@ const App: React.FC = () => {
     <TaskProvider>
         <Routes>
           <Route path='/' element={<Dashboard />} />
-          <Route path='/profile' element={<AuthenticationGuard components={ProfilePage} />} />
-          <Route path='protected' element={<AuthenticationGuard components={ProtectedPage} />} />
+          <Route path='/profile' element={<AuthenticationGuard component={ProfilePage} />} />
+          <Route path='protected' element={<AuthenticationGuard component={ProtectedPage} />} />
           <Route path='/callback' element={<CallbackPage />} />
           <Route path='/task/:id' element={<TaskDetails />} />
           <Route path='/task/new' element={<TaskForm />} />
