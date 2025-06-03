@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import Auth0ProviderWithNavigate from './authentication/Auth0Provider';
+import Auth0ProviderWrapper from './authentication/Auth0ProviderWrapper';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')as HTMLElement
@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <BrowserRouter>
-  <Auth0ProviderWithNavigate>
-    <App />
-    </Auth0ProviderWithNavigate>
-    </BrowserRouter>
+    <Auth0ProviderWrapper>
+      <App />
+    </Auth0ProviderWrapper>
+  </BrowserRouter>
 );
